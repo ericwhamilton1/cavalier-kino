@@ -1,0 +1,58 @@
+@use "sass:math";
+$font-stack: Helvetica, sans-serif;
+$poster-width: 200px;
+$accent-color: rgb(1, 1, 69);
+
+body {
+    font: 100% $font-stack;
+}
+
+header {
+    background-color: $accent-color;
+    nav {
+        background-color: inherit;
+    }
+}
+
+.container {
+    max-width: 1000px;
+}
+
+#login-button {
+    height: 40px;
+    width: 56px;
+}
+
+.movie-scroll {
+    list-style-type: none;
+    white-space: nowrap;
+    overflow-x: scroll;
+    gap: 10px;
+}
+
+// TODO: Make poster width react to screen size
+.movie-card {
+    display: inline-block;
+    height: $poster-width;
+    width: $poster-width * math.div(27,40);
+    position: relative;
+    border-radius: 2px;
+    img {
+        border-radius: inherit;
+        height: 100%;
+        width: 100%;
+        flex: 1;
+    }
+    a {
+        border-radius: inherit;
+    }
+    p {
+        font-size: 12px;
+        color: black;
+        background-color: white;
+        opacity: 85%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}
