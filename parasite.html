@@ -26,23 +26,18 @@
   <header>
     <nav class="navbar navbar-expand-md" aria-label="Eighth navbar example">
         <div class="container position-relative">
-            <a class="navbar-brand" href="#">Cavalier Kino</a>
-            <button class="navbar-toggler bg-dark ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#nav-links"
+            <a class="navbar-brand" href="/index.html">Cavalier Kino</a>
+            <button class="navbar-toggler bg-dark ms-auto nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#nav-links"
                 aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon bg-dark"></span>
+                <i class="bi bi-list"></i>
             </button>
-            <button type="button" class="btn btn-dark btn-outline-secondary ms-2 d-md-none" id="login-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
-                    class="bi bi-person-circle " viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                    <path fill-rule="evenodd"
-                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                </svg>
+            <button type="button" class="btn btn-dark ms-2 d-md-none nav-button">
+                <i class="bi bi-person-circle"></i>
             </button>
             <div class="collapse navbar-collapse" id="nav-links">
                 <ul class="navbar-nav me-auto mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Movies</a>
@@ -57,18 +52,13 @@
                 <form role="search">
                     <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                 </form>
-                <button type="button" class="btn btn-dark btn-outline-secondary ms-2 d-none d-md-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
-                        class="bi bi-person-circle " viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                        <path fill-rule="evenodd"
-                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                    </svg>
+                <button type="button" class="btn btn-dark ms-2 d-none d-md-block nav-button">
+                    <i class="bi bi-person-circle"></i>
                 </button>
             </div>
         </div>
     </nav>
-  </header>
+</header>
 
   <div class="container col-xxl-8 px-4 py-3">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -131,7 +121,7 @@
 
     <ul class="nav justify-content-end">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary active" aria-current="page">Movies</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Movies</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">TV Shows</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Social</a></li>
     </ul>
