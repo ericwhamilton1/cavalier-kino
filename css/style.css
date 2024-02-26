@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font: 100% Helvetica, sans-serif;
 }
@@ -49,6 +50,79 @@ header nav {
   width: 100%;
   position: absolute;
   bottom: 0;
+}
+
+.btn-movie {
+  background-color: rgb(1, 1, 69);
+}
+
+.star-ratings-css {
+  unicode-bidi: bidi-override;
+  color: orange;
+  font-size: 1rem;
+  height: 25px;
+  position: relative;
+}
+
+.star-ratings-css::before {
+  content: "☆☆☆☆☆";
+  opacity: 0.7;
+}
+
+[data-rate="0"]::after {
+  width: calc(0 * 20%);
+}
+
+[data-rate="0.5"]::after {
+  width: calc(0.5 * 20%);
+}
+
+[data-rate="1"]::after {
+  width: calc(1 * 20%);
+}
+
+[data-rate="1.5"]::after {
+  width: calc(1.5 * 20%);
+}
+
+[data-rate="2"]::after {
+  width: calc(2 * 20%);
+}
+
+[data-rate="2.5"]::after {
+  width: calc(2.5 * 20%);
+}
+
+[data-rate="3"]::after {
+  width: calc(3 * 20%);
+}
+
+[data-rate="3.5"]::after {
+  width: calc(3.5 * 20%);
+}
+
+[data-rate="4"]::after {
+  width: calc(4 * 20%);
+}
+
+[data-rate="4.5"]::after {
+  width: calc(4.5 * 20%);
+}
+
+[data-rate="5"]::after {
+  width: calc(5 * 20%);
+}
+
+.star-ratings-css::after {
+  color: orange;
+  content: "★★★★★";
+  position: absolute;
+  z-index: 1;
+  display: block;
+  left: 0;
+  top: 0;
+  width: attr(rating);
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
