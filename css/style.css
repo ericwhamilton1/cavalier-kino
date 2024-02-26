@@ -18,6 +18,19 @@ header nav {
   width: 56px;
 }
 
+.nav-button {
+  color: lightgrey;
+  height: 35px;
+  width: 40px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-button * {
+  color: lightgrey;
+}
+
 .movie-scroll {
   list-style-type: none;
   white-space: nowrap;
