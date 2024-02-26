@@ -12,6 +12,7 @@ header nav {
 
 .container {
   max-width: 1000px;
+  padding: 0 20px;
 }
 
 #login-button {
@@ -63,6 +64,25 @@ header nav {
   width: 100%;
   position: absolute;
   bottom: 0;
+}
+.movie-card .stars {
+  position: absolute;
+  width: 100%;
+  color: yellow;
+  top: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.img-thumbnail {
+  width: 200px;
+  height: 220px;
+  object-fit: cover;
+  padding: 3px;
+}
+
+.list-group-item:hover {
+  background-color: #020277;
 }
 
 .btn-movie {
