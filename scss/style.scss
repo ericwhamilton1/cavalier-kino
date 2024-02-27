@@ -84,15 +84,14 @@ header {
     display:none;
 }
 
-    .stars {
-        position: absolute;
-        width: 100%;
-        color: yellow;
-        top: 4px;
-        display: flex;
-        justify-content: center;
-
-    }
+.stars {
+    position: absolute;
+    width: 100%;
+    color: yellow;
+    top: 4px;
+    display: flex;
+    justify-content: center;
+}
 
 
 .img-thumbnail {

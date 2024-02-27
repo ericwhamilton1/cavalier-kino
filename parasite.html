@@ -26,18 +26,18 @@
   <header>
     <nav class="navbar navbar-expand-md" aria-label="Eighth navbar example">
         <div class="container position-relative">
-            <a class="navbar-brand" href="/index.html">Cavalier Kino</a>
+            <a class="navbar-brand" href="index.html">Cavalier Kino</a>
             <button class="navbar-toggler bg-dark ms-auto nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#nav-links"
                 aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="bi bi-list"></i>
             </button>
-            <a type="button" href="/account.html" class="btn btn-dark ms-2 d-md-none nav-button">
+            <a type="button" href="account.html" class="btn btn-dark ms-2 d-md-none nav-button">
               <i class="bi bi-person-circle"></i>
             </a>
             <div class="collapse navbar-collapse" id="nav-links">
                 <ul class="navbar-nav me-auto mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Movies</a>
@@ -52,7 +52,7 @@
                 <form role="search">
                     <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                 </form>
-                <a href="/account.html" class="btn btn-dark ms-2 d-none d-md-block nav-button">
+                <a href="account.html" class="btn btn-dark ms-2 d-none d-md-block nav-button">
                   <i class="bi bi-person-circle"></i>
                 </a>
             </div>
@@ -104,13 +104,22 @@
     <div class="container col-xxl-8 px-4 py-2 mt-3">
       <h1 class="display-8 fw-bold text-body-emphasis lh-1 mb-3">Leave a Review</h1>
       <div class="input-group">
-        <span class="input-group-text">Review Here!</span>
+        <span class="input-group-text">Share your thoughts here!</span>
         <textarea class="form-control" aria-label="With textarea"></textarea>
       </div>
     </div>
     <div class="container col-xxl-8 px-4 py-2">
-      <label for="customRange3" class="form-label">Numerical Rating</label>
-      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+      <label for="customRange3" class="form-label">Star Rating:                          
+        <span>
+          <i class="bi bi-star-fill" id="star1"></i>
+          <i class="bi bi-star-fill" id="star2"></i>
+          <i class="bi bi-star-half" id="star3"></i>
+          <i class="bi bi-star" id="star4"></i>
+          <i class="bi bi-star" id="star5"></i>
+        </span>
+      </label>
+      <input type="range" class="form-range" min="0" max="5" step="0.5" value="2.5" id="numericalRating">
+      <p class="mb-3">Current Rating: <span class="mb-1" id="ratingNum"></span> Stars</p>
       <button class="btn btn-movie btn-primary" type="submit" onclick="showReviewForm()">Submit review</button>
     </div>
   </div>
