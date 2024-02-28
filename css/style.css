@@ -105,7 +105,8 @@ header nav {
 .img-thumbnail {
   width: 200px;
   height: 220px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding: 3px;
 }
 
@@ -148,4 +149,6 @@ header nav {
   margin-top: 0px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.int-rating:hover {
+  color: yellow;
+}/*# sourceMappingURL=style.css.map */
