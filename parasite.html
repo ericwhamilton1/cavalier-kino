@@ -32,7 +32,7 @@
           data-bs-target="#nav-links" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
           <i class="bi bi-list"></i>
         </button>
-        <a href="account\.html" class="btn btn-dark ms-2 d-md-none nav-button" aria-label="Account Button">
+        <a href="account.html" class="btn btn-dark ms-2 d-md-none nav-button" aria-label="Account Button">
           <i class="bi bi-person-circle"></i>
         </a>
         <div class="collapse navbar-collapse" id="nav-links">
@@ -53,7 +53,7 @@
           <form role="search">
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
           </form>
-          <a href="account\.html" class="btn btn-dark ms-2 d-none d-md-block nav-button" aria-label="Account Button">
+          <a href="account.html" class="btn btn-dark ms-2 d-none d-md-block nav-button" aria-label="Account Button">
             <i class="bi bi-person-circle"></i>
           </a>
         </div>
@@ -62,9 +62,14 @@
   </header>
 
   <div class="container col-xxl-8 px-4 py-3">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="row align-items-center g-5 py-5">
+      <div class="col-lg-3">
+        <img src="img/parasite.jpg" class="d-block mx-lg-auto img-fluid" alt="Parasite Movie Poster" width="200"
+          loading="lazy">
+      </div>
       <div class="col-10 col-sm-8 col-lg-9">
-        <h1 class="display-8 fw-bold text-body-emphasis lh-1 mb-3">Parasite (2019)</h1>
+        <h1 class="display-8 fw-bold text-body-emphasis lh-1 mb-3">Parasite</h1>
+        <p class="lead">2019 &#x2022; Adventure/Comedy &#x2022; 2h 12m</p>
         <p class="lead">Parasite (Korean: 기생충; RR: Gisaengchung) is a 2019 South Korean black comedy thriller film
           directed by Bong Joon-ho, who co-wrote the screenplay with Han Jin-won and co-produced. The film, starring
           Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong, Choi Woo-shik, Park So-dam, Jang Hye-jin, Park Myung-hoon, and Lee
@@ -74,10 +79,6 @@
           <button type="button" class="btn btn-movie btn-primary btn-lg px-4 me-md-2" onclick="showReviewForm()">Leave a
             Review</button>
         </div>
-      </div>
-      <div class="col-lg-3">
-        <img src="img/parasite.jpg" class="d-block mx-lg-auto img-fluid" alt="Parasite Movie Poster" width="200"
-          loading="lazy">
       </div>
     </div>
   </div>
@@ -114,7 +115,7 @@
     </div>
     <div class="container col-xxl-8 px-4 py-2">
       <label class="form-label">Star Rating:
-        <span>
+        <span class="int-rating">
           <i class="bi bi-star-fill" id="star1"></i>
           <i class="bi bi-star-fill" id="star2"></i>
           <i class="bi bi-star-half" id="star3"></i>

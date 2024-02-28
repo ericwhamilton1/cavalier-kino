@@ -14,11 +14,6 @@ header nav {
   padding: 0 20px;
 }
 
-#login-button {
-  height: 40px;
-  width: 56px;
-}
-
 .nav-button {
   color: lightgrey;
   height: 35px;
@@ -28,7 +23,7 @@ header nav {
   justify-content: center;
   align-items: center;
 }
-.nav-button * {
+.nav-button i {
   color: lightgrey;
 }
 
@@ -39,30 +34,55 @@ header nav {
   gap: 10px;
 }
 
-.movie-card {
-  display: inline-block;
-  height: 200px;
-  width: 135px;
+.movie-grid {
+  list-style-type: none;
+  gap: 10px;
+}
+
+.movie-card, .movie-card-grid, .movie-card-scroll {
   position: relative;
   border-radius: 2px;
+  background-color: white;
 }
-.movie-card img {
+.movie-card img, .movie-card-grid img, .movie-card-scroll img {
   border-radius: inherit;
   height: 100%;
   width: 100%;
   flex: 1;
 }
-.movie-card a {
+.movie-card img:hover, .movie-card-grid img:hover, .movie-card-scroll img:hover {
+  opacity: 0.5;
+}
+.movie-card a, .movie-card-grid a, .movie-card-scroll a {
   border-radius: inherit;
 }
-.movie-card p {
-  font-size: 12px;
-  color: black;
+.movie-card .movie-title-overlay, .movie-card-grid .movie-title-overlay, .movie-card-scroll .movie-title-overlay {
   background-color: white;
   opacity: 85%;
+  height: 10%;
   width: 100%;
   position: absolute;
   bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.movie-card p, .movie-card-grid p, .movie-card-scroll p {
+  font-size: 2cqh;
+  color: black;
+}
+
+.movie-card-scroll {
+  display: inline-block;
+  height: 180px;
+  width: 121.5px;
+}
+
+.movie-card-grid {
+  height: 100%;
+  width: auto;
+  max-width: 216px;
+  flex: 1 1 180px;
 }
 
 .btn-movie {
@@ -92,4 +112,43 @@ header nav {
 
 .list-group-item:hover {
   background-color: #020277;
+}
+
+#searchbar {
+  display: flex;
+}
+#searchbar form {
+  flex: 1;
+}
+#searchbar form input {
+  border-radius: 5px 0 0 5px;
+}
+#searchbar button {
+  background-color: darkgrey;
+  flex: 0 0 auto;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  height: auto;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#innerfiltermenu {
+  border: solid rgb(73, 80, 87) 1px;
+  border-radius: 5px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.form-check input {
+  margin-top: 0px;
+}
+
+.int-rating:hover {
+  color: yellow;
 }/*# sourceMappingURL=style.css.map */
