@@ -64,7 +64,7 @@ header nav {
   justify-content: center;
 }
 .movie-card p, .movie-card-grid p, .movie-card-scroll p {
-  font-size: 2cqh;
+  font-size: 1.7cqh;
   color: black;
 }
 
