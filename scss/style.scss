@@ -53,13 +53,18 @@ header {
 .movie-card {
     position: relative;
     border-radius: 2px;
+    background-color: white;
 
     img {
         border-radius: inherit;
         height: 100%;
         width: 100%;
         flex: 1;
+        &:hover {
+            opacity: .5;
+        }
     }
+
 
     a {
         border-radius: inherit;
@@ -78,11 +83,15 @@ header {
     }
 
     p {
-        font-size: 1.7cqh;
+        font-size: 2cqh;
         color: black;
     }
 }
 
+
+// We can now use two seperate extensions one for 
+// Movie posters in the horizontal scroll windows
+// and one for movie posters in the grid layout on the search page.
 .movie-card-scroll {
     @extend .movie-card;
     display: inline-block;

@@ -42,12 +42,16 @@ header nav {
 .movie-card, .movie-card-grid, .movie-card-scroll {
   position: relative;
   border-radius: 2px;
+  background-color: white;
 }
 .movie-card img, .movie-card-grid img, .movie-card-scroll img {
   border-radius: inherit;
   height: 100%;
   width: 100%;
   flex: 1;
+}
+.movie-card img:hover, .movie-card-grid img:hover, .movie-card-scroll img:hover {
+  opacity: 0.5;
 }
 .movie-card a, .movie-card-grid a, .movie-card-scroll a {
   border-radius: inherit;
@@ -64,7 +68,7 @@ header nav {
   justify-content: center;
 }
 .movie-card p, .movie-card-grid p, .movie-card-scroll p {
-  font-size: 1.7cqh;
+  font-size: 2cqh;
   color: black;
 }
 
