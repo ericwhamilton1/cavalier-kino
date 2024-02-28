@@ -104,13 +104,22 @@
     <div class="container col-xxl-8 px-4 py-2 mt-3">
       <h1 class="display-8 fw-bold text-body-emphasis lh-1 mb-3">Leave a Review</h1>
       <div class="input-group">
-        <span class="input-group-text">Review Here!</span>
+        <span class="input-group-text">Share your thoughts here!</span>
         <textarea class="form-control" aria-label="With textarea"></textarea>
       </div>
     </div>
     <div class="container col-xxl-8 px-4 py-2">
-      <label for="customRange3" class="form-label">Numerical Rating</label>
-      <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+      <label for="customRange3" class="form-label">Star Rating:                          
+        <span>
+          <i class="bi bi-star-fill" id="star1"></i>
+          <i class="bi bi-star-fill" id="star2"></i>
+          <i class="bi bi-star-half" id="star3"></i>
+          <i class="bi bi-star" id="star4"></i>
+          <i class="bi bi-star" id="star5"></i>
+        </span>
+      </label>
+      <input type="range" class="form-range" min="0" max="5" step="0.5" value="2.5" id="numericalRating">
+      <p class="mb-3">Current Rating: <span class="mb-1" id="ratingNum"></span> Stars</p>
       <button class="btn btn-movie btn-primary" type="submit" onclick="showReviewForm()">Submit review</button>
     </div>
   </div>
